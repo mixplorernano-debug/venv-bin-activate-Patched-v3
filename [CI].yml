@@ -57,9 +57,9 @@ Runner Image
   Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251014.76/images/ubuntu/Ubuntu2404-Readme.md
   Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251014.76
 GITHUB_TOKEN Permissions
-  Contents: read
-  Metadata: read
-  Packages: read
+  Contents: read && write 
+  Metadata: read && write
+  Packages: read && write
 Secret source: Actions
 ##[debug]Primary repository: mixplorernano-debug/venv-bin-activate-Patched-v3
 Prepare workflow directory
@@ -100,9 +100,9 @@ Runner Image
   Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251014.76/images/ubuntu/Ubuntu2404-Readme.md
   Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251014.76
 GITHUB_TOKEN Permissions
-  Contents: read
-  Metadata: read
-  Packages: read
+  Contents: read && write
+  Metadata: read && write
+  Packages: read && write
 Secret source: Actions
 ##[debug]Primary repository: mixplorernano-debug/venv-bin-activate-Patched-v3
 Prepare workflow directory
@@ -143,9 +143,9 @@ Runner Image
   Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251014.76/images/ubuntu/Ubuntu2404-Readme.md
   Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251014.76
 GITHUB_TOKEN Permissions
-  Contents: read
-  Metadata: read
-  Packages: read
+  Contents: read && write
+  Metadata: read && write
+  Packages: read && write
 Secret source: Actions
 ##[debug]Primary repository: mixplorernano-debug/venv-bin-activate-Patched-v3
 Prepare workflow directory
@@ -204,7 +204,7 @@ Run actions/checkout@v2
     clean: true
     fetch-depth: 1
     lfs: false
-    submodules: false
+    submodules: true
     set-safe-directory: true
 ##[debug]GITHUB_WORKSPACE = '/home/runner/work/venv-bin-activate-Patched-v3/venv-bin-activate-Patched-v3'
 ##[debug]qualified repository = 'mixplorernano-debug/venv-bin-activate-Patched-v3'
@@ -374,7 +374,7 @@ Run actions/checkout@v2
     clean: true
     fetch-depth: 1
     lfs: false
-    submodules: false
+    submodules: true
     set-safe-directory: true
 ##[debug]GITHUB_WORKSPACE = '/home/runner/work/venv-bin-activate-Patched-v3/venv-bin-activate-Patched-v3'
 ##[debug]qualified repository = 'mixplorernano-debug/venv-bin-activate-Patched-v3'
