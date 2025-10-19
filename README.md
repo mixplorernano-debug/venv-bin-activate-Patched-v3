@@ -6,6 +6,10 @@
 
 ## [+] Installation & Usage :atom_symbol:
 ```
+python -m venv venv
+source venv/bin/activate
+```
+```
 apt update && upgrade -y 
 pkg install git python mpv figlet -y
 pip install lolcat
@@ -34,16 +38,12 @@ bash rvt.sh
 source venv/bin/activate
 
 What is this repository for?
-%!VENV
+%!
+VENV
 
 ### Install
 
-First, create a new directory and set up a virtual environment:
-
-```sh
-python -m venv venv
-source venv/bin/activate
-```
+First, create a new directory and set up a virtual environment
 
 
 #This will create and activate a virtual environment named .venv
