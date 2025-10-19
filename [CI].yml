@@ -1,0 +1,424 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+
+         git clone https://github.com/actions/runner-images/blob/ubuntu24/20251014.76/images/ubuntu/
+         Ubuntu2404-Readme.md
+
+          Update README.md #4
+1s
+##[debug]Starting: Set up job
+Current runner version: '2.329.0'
+Runner Image Provisioner
+  Hosted Compute Agent
+  Version: 20251013.424
+  Commit: cfdd8bfed34d71a55b72df4d2e82343c3fc2bab3
+  Build Date: 2025-10-13T20:22:23Z
+Operating System
+  Ubuntu
+  24.04.3
+  LTS
+Runner Image
+  Image: ubuntu-24.04
+  Version: 20251014.76.1
+  Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251014.76/images/ubuntu/Ubuntu2404-Readme.md
+  Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251014.76
+GITHUB_TOKEN Permissions
+  Contents: read
+  Metadata: read
+  Packages: read
+Secret source: Actions
+##[debug]Primary repository: mixplorernano-debug/venv-bin-activate-Patched-v3
+Prepare workflow directory
+##[debug]Creating pipeline directory: '/home/runner/work/venv-bin-activate-Patched-v3'
+##[debug]Creating workspace directory: '/home/runner/work/venv-bin-activate-Patched-v3/venv-bin-activate-Patched-v3'
+##[debug]Update context data
+##[debug]Evaluating job-level environment variables
+##[debug]Evaluating job container
+##[debug]Evaluating job service containers
+##[debug]Evaluating job defaults
+Prepare all required actions
+Getting action download info
+Download action repository 'actions/checkout@v2' (SHA:ee0669bd1cc54295c223e0bb666b733df41de1c5)
+##[debug]Copied action archive '/opt/actionarchivecache/actions_checkout/ee0669bd1cc54295c223e0bb666b733df41de1c5.tar.gz' to '/home/runner/work/_actions/_temp_c79e6390-fa0d-4a1d-b996-dccb15e1cdc5/fd333ac4-a21f-48af-9048-f7f68d92aeb8.tar.gz'
+##[debug]Unwrap 'actions-checkout-ee0669b' to '/home/runner/work/_actions/actions/checkout/v2'
+##[debug]Archive '/home/runner/work/_actions/_temp_c79e6390-fa0d-4a1d-b996-dccb15e1cdc5/fd333ac4-a21f-48af-9048-f7f68d92aeb8.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/checkout/v2'.
+##[debug]action.yml for action: '/home/runner/work/_actions/actions/checkout/v2/action.yml'.
+##[debug]Set step '__actions_checkout' display name to: 'Run actions/checkout@v2'
+##[debug]Set step '__run' display name to: 'Run a one-line script'
+##[debug]Set step '__run_2' display name to: 'Run a multi-line script'
+Complete job name: build
+##[debug]Collect running processes for tracking orphan processes.
+##[debug]Finishing: Set up job
+##[debug]Starting: Set up job
+Current runner version: '2.329.0'
+Runner Image Provisioner
+  Hosted Compute Agent
+  Version: 20251013.424
+  Commit: cfdd8bfed34d71a55b72df4d2e82343c3fc2bab3
+  Build Date: 2025-10-13T20:22:23Z
+Operating System
+  Ubuntu
+  24.04.3
+  LTS
+Runner Image
+  Image: ubuntu-24.04
+  Version: 20251014.76.1
+  Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251014.76/images/ubuntu/Ubuntu2404-Readme.md
+  Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251014.76
+GITHUB_TOKEN Permissions
+  Contents: read
+  Metadata: read
+  Packages: read
+Secret source: Actions
+##[debug]Primary repository: mixplorernano-debug/venv-bin-activate-Patched-v3
+Prepare workflow directory
+##[debug]Creating pipeline directory: '/home/runner/work/venv-bin-activate-Patched-v3'
+##[debug]Creating workspace directory: '/home/runner/work/venv-bin-activate-Patched-v3/venv-bin-activate-Patched-v3'
+##[debug]Update context data
+##[debug]Evaluating job-level environment variables
+##[debug]Evaluating job container
+##[debug]Evaluating job service containers
+##[debug]Evaluating job defaults
+Prepare all required actions
+Getting action download info
+Download action repository 'actions/checkout@v2' (SHA:ee0669bd1cc54295c223e0bb666b733df41de1c5)
+##[debug]Copied action archive '/opt/actionarchivecache/actions_checkout/ee0669bd1cc54295c223e0bb666b733df41de1c5.tar.gz' to '/home/runner/work/_actions/_temp_c79e6390-fa0d-4a1d-b996-dccb15e1cdc5/fd333ac4-a21f-48af-9048-f7f68d92aeb8.tar.gz'
+##[debug]Unwrap 'actions-checkout-ee0669b' to '/home/runner/work/_actions/actions/checkout/v2'
+##[debug]Archive '/home/runner/work/_actions/_temp_c79e6390-fa0d-4a1d-b996-dccb15e1cdc5/fd333ac4-a21f-48af-9048-f7f68d92aeb8.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/checkout/v2'.
+##[debug]action.yml for action: '/home/runner/work/_actions/actions/checkout/v2/action.yml'.
+##[debug]Set step '__actions_checkout' display name to: 'Run actions/checkout@v2'
+##[debug]Set step '__run' display name to: 'Run a one-line script'
+##[debug]Set step '__run_2' display name to: 'Run a multi-line script'
+Complete job name: build
+##[debug]Collect running processes for tracking orphan processes.
+1s
+##[debug]Starting: Set up job
+Current runner version: '2.329.0'
+Runner Image Provisioner
+  Hosted Compute Agent
+  Version: 20251013.424
+  Commit: cfdd8bfed34d71a55b72df4d2e82343c3fc2bab3
+  Build Date: 2025-10-13T20:22:23Z
+Operating System
+  Ubuntu
+  24.04.3
+  LTS
+Runner Image
+  Image: ubuntu-24.04
+  Version: 20251014.76.1
+  Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251014.76/images/ubuntu/Ubuntu2404-Readme.md
+  Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251014.76
+GITHUB_TOKEN Permissions
+  Contents: read
+  Metadata: read
+  Packages: read
+Secret source: Actions
+##[debug]Primary repository: mixplorernano-debug/venv-bin-activate-Patched-v3
+Prepare workflow directory
+##[debug]Creating pipeline directory: '/home/runner/work/venv-bin-activate-Patched-v3'
+##[debug]Creating workspace directory: '/home/runner/work/venv-bin-activate-Patched-v3/venv-bin-activate-Patched-v3'
+##[debug]Update context data
+##[debug]Evaluating job-level environment variables
+##[debug]Evaluating job container
+##[debug]Evaluating job service containers
+##[debug]Evaluating job defaults
+Prepare all required actions
+Getting action download info
+Download action repository 'actions/checkout@v2' (SHA:ee0669bd1cc54295c223e0bb666b733df41de1c5)
+##[debug]Copied action archive '/opt/actionarchivecache/actions_checkout/ee0669bd1cc54295c223e0bb666b733df41de1c5.tar.gz' to '/home/runner/work/_actions/_temp_c79e6390-fa0d-4a1d-b996-dccb15e1cdc5/fd333ac4-a21f-48af-9048-f7f68d92aeb8.tar.gz'
+##[debug]Unwrap 'actions-checkout-ee0669b' to '/home/runner/work/_actions/actions/checkout/v2'
+##[debug]Archive '/home/runner/work/_actions/_temp_c79e6390-fa0d-4a1d-b996-dccb15e1cdc5/fd333ac4-a21f-48af-9048-f7f68d92aeb8.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/checkout/v2'.
+##[debug]action.yml for action: '/home/runner/work/_actions/actions/checkout/v2/action.yml'.
+##[debug]Set step '__actions_checkout' display name to: 'Run actions/checkout@v2'
+##[debug]Set step '__run' display name to: 'Run a one-line script'
+##[debug]Set step '__run_2' display name to: 'Run a multi-line script'
+Complete job name: build
+##[debug]Collect running processes for tracking orphan processes.
+##[debug]Finishing: Set up job
+0s
+##[debug]Evaluating condition for step: 'Run actions/checkout@v2'
+##[debug]Evaluating: success()
+##[debug]Evaluating success:
+##[debug]=> true
+##[debug]Result: true
+##[debug]Starting: Run actions/checkout@v2
+##[debug]Register post job cleanup for action: actions/checkout@v2
+##[debug]Loading inputs
+##[debug]Evaluating: github.repository
+##[debug]Evaluating Index:
+##[debug]..Evaluating github:
+##[debug]..=> Object
+##[debug]..Evaluating String:
+##[debug]..=> 'repository'
+##[debug]=> 'mixplorernano-debug/venv-bin-activate-Patched-v3'
+##[debug]Result: 'mixplorernano-debug/venv-bin-activate-Patched-v3'
+##[debug]Evaluating: github.token
+##[debug]Evaluating Index:
+##[debug]..Evaluating github:
+##[debug]..=> Object
+##[debug]..Evaluating String:
+##[debug]..=> 'token'
+##[debug]=> '***'
+##[debug]Result: '***'
+##[debug]Loading env
+Run actions/checkout@v2
+  with:
+    repository: mixplorernano-debug/venv-bin-activate-Patched-v3
+    token: ***
+    ssh-strict: true
+    persist-credentials: true
+    clean: true
+    fetch-depth: 1
+    lfs: false
+    submodules: false
+    set-safe-directory: true
+##[debug]GITHUB_WORKSPACE = '/home/runner/work/venv-bin-activate-Patched-v3/venv-bin-activate-Patched-v3'
+##[debug]qualified repository = 'mixplorernano-debug/venv-bin-activate-Patched-v3'
+##[debug]ref = 'refs/pull/2/merge'
+##[debug]commit = 'ed02c1851b6c5e2fbc1430cb0a3c5de5fcdf48b6'
+##[debug]clean = true
+##[debug]fetch depth = 1
+##[debug]lfs = false
+##[debug]submodules = false
+##[debug]recursive submodules = false
+::add-matcher::/home/runner/work/_actions/actions/checkout/v2/dist/problem-matcher.json
+##[debug]Added matchers: 'checkout-git'. Problem matchers scan action output for known warning or error strings and report these inline.
+Syncing repository: mixplorernano-debug/venv-bin-activate-Patched-v3
+::group::Getting Git version info
+Getting Git version info
+  Working directory is '/home/runner/work/venv-bin-activate-Patched-v3/venv-bin-activate-Patched-v3'
+  ##[debug]Getting git version
+  /usr/bin/git version
+  git version 2.51.0
+  ##[debug]Set git useragent to: git/2.51.0 (github-actions-checkout)
+  ::endgroup::
+::add-mask::***
+Temporarily overriding HOME='/home/runner/work/_temp/536183f0-80c6-459b-80bd-b14957e07c0a' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+/usr/bin/git config --global --add safe.directory /home/runner/work/venv-bin-activate-Patched-v3/venv-bin-activate-Patched-v3
+Deleting the contents of '/home/runner/work/venv-bin-activate-Patched-v3/venv-bin-activate-Patched-v3'
+::group::Initializing the repository
+Initializing the repository
+  /usr/bin/git init /home/runner/work/venv-bin-activate-Patched-v3/venv-bin-activate-Patched-v3
+  hint: Using 'master' as the name for the initial branch. This default branch name
+  hint: is subject to change. To configure the initial branch name to use in all
+  hint: of your new repositories, which will suppress this warning, call:
+  hint:
+  hint: 	git config --global init.defaultBranch <name>
+  hint:
+  hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+  hint: 'development'. The just-created branch can be renamed via this command:
+  hint:
+  hint: 	git branch -m <name>
+  hint:
+  hint: Disable this message with "git config set advice.defaultBranchName false"
+  Initialized empty Git repository in /home/runner/work/venv-bin-activate-Patched-v3/venv-bin-activate-Patched-v3/.git/
+  /usr/bin/git remote add origin https://github.com/mixplorernano-debug/venv-bin-activate-Patched-v3
+  ::endgroup::
+::group::Disabling automatic garbage collection
+Disabling automatic garbage collection
+::group::Setting up auth
+Setting up auth
+  /usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+  /usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+  /usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+  /usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+  /usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+  ::endgroup::
+::group::Fetching the repository
+Fetching the repository
+  /usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +ed02c1851b6c5e2fbc1430cb0a3c5de5fcdf48b6:refs/remotes/pull/2/merge
+  remote: Enumerating objects: 18, done.        
+  remote: Counting objects:   5% (1/18)        
+  remote: Counting objects:  11% (2/18)        
+  remote: Counting objects:  16% (3/18)        
+  remote: Counting objects:  22% (4/18)        
+  remote: Counting objects:  27% (5/18)        
+  remote: Counting objects:  33% (6/18)        
+  remote: Counting objects:  38% (7/18)        
+  remote: Counting objects:  44% (8/18)        
+  remote: Counting objects:  50% (9/18)        
+  remote: Counting objects:  55% (10/18)        
+  remote: Counting objects:  61% (11/18)        
+  remote: Counting objects:  66% (12/18)        
+  remote: Counting objects:  72% (13/18)        
+  remote: Counting objects:  77% (14/18)        
+  remote: Counting objects:  83% (15/18)        
+  remote: Counting objects:  88% (16/18)        
+  remote: Counting objects:  94% (17/18)        
+  remote: Counting objects: 100% (18/18)        
+  remote: Counting objects: 100% (18/18), done.        
+  remote: Compressing objects:   5% (1/17)        
+  remote: Compressing objects:  11% (2/17)        
+  remote: Compressing objects:  17% (3/17)        
+  remote: Compressing objects:  23% (4/17)        
+  remote: Compressing objects:  29% (5/17)        
+  remote: Compressing objects:  35% (6/17)        
+  remote: Compressing objects:  41% (7/17)        
+  remote: Compressing objects:  47% (8/17)        
+  remote: Compressing objects:  52% (9/17)        
+  remote: Compressing objects:  58% (10/17)        
+  remote: Compressing objects:  64% (11/17)        
+  remote: Compressing objects:  70% (12/17)        
+  remote: Compressing objects:  76% (13/17)        
+  remote: Compressing objects:  82% (14/17)        
+  remote: Compressing objects:  88% (15/17)        
+  remote: Compressing objects:  94% (16/17)        
+  remote: Compressing objects: 100% (17/17)        
+  remote: Compressing objects: 100% (17/17), done.        
+  remote: Total 18 (delta 0), reused 13 (delta 0), pack-reused 0 (from 0)        
+  From https://github.com/mixplorernano-debug/venv-bin-activate-Patched-v3
+   * [new ref]         ed02c1851b6c5e2fbc1430cb0a3c5de5fcdf48b6 -> pull/2/merge
+  ::endgroup::
+::group::Determining the checkout info
+Determining the checkout info
+  ::endgroup::
+::group::Checking out the ref
+Checking out the ref
+  /usr/bin/git checkout --progress --force refs/remotes/pull/2/merge
+  Note: switching to 'refs/remotes/pull/2/merge'.
+  
+  You are in 'detached HEAD' state. You can look around, make experimental
+  changes and commit them, and you can discard any commits you make in this
+  state without impacting any branches by switching back to a branch.
+  
+  If you want to create a new branch to retain commits you create, you may
+  do so (now or later) by using -c with the switch command. Example:
+  
+    git switch -c <new-branch-name>
+  
+  Or undo this operation with:
+  
+    git switch -
+  
+  Turn off this advice by setting config variable advice.detachedHead to false
+  
+  HEAD is now at ed02c18 Merge 4e5e4eb743eddc8264aea9784bac7daecfd73cc9 into 1c3c5f4d71d3646f13edeb635d4332145b22988a
+  ::endgroup::
+/usr/bin/git log -1 --format='%H'
+'ed02c1851b6c5e2fbc1430cb0a3c5de5fcdf48b6'
+##[debug]Unsetting HOME override
+::remove-matcher owner=checkout-git::
+##[debug]Removed matchers: 'checkout-git'
+##[debug]Node Action run completed with exit code 0
+##[debug]Save intra-action state isPost = true
+##[debug]Save intra-action state setSafeDirectory = true
+##[debug]Save intra-action state repositoryPath = /home/runner/work/venv-bin-activate-Patched-v3/venv-bin-activate-Patched-v3
+##[debug]Finishing: Run actions/checkout@v2
+0s
+##[debug]Evaluating condition for step: 'Run actions/checkout@v2'
+##[debug]Evaluating: success()
+##[debug]Evaluating success:
+##[debug]=> true
+##[debug]Result: true
+##[debug]Starting: Run actions/checkout@v2
+##[debug]Register post job cleanup for action: actions/checkout@v2
+##[debug]Loading inputs
+##[debug]Evaluating: github.repository
+##[debug]Evaluating Index:
+##[debug]..Evaluating github:
+##[debug]..=> Object
+##[debug]..Evaluating String:
+##[debug]..=> 'repository'
+##[debug]=> 'mixplorernano-debug/venv-bin-activate-Patched-v3'
+##[debug]Result: 'mixplorernano-debug/venv-bin-activate-Patched-v3'
+##[debug]Evaluating: github.token
+##[debug]Evaluating Index:
+##[debug]..Evaluating github:
+##[debug]..=> Object
+##[debug]..Evaluating String:
+##[debug]..=> 'token'
+##[debug]=> '***'
+##[debug]Result: '***'
+##[debug]Loading env
+Run actions/checkout@v2
+  with:
+    repository: mixplorernano-debug/venv-bin-activate-Patched-v3
+    token: ***
+    ssh-strict: true
+    persist-credentials: true
+    clean: true
+    fetch-depth: 1
+    lfs: false
+    submodules: false
+    set-safe-directory: true
+##[debug]GITHUB_WORKSPACE = '/home/runner/work/venv-bin-activate-Patched-v3/venv-bin-activate-Patched-v3'
+##[debug]qualified repository = 'mixplorernano-debug/venv-bin-activate-Patched-v3'
+##[debug]ref = 'refs/pull/2/merge'
+##[debug]commit = 'ed02c1851b6c5e2fbc1430cb0a3c5de5fcdf48b6'
+##[debug]clean = true
+##[debug]fetch depth = 1
+##[debug]lfs = false
+##[debug]submodules = false
+##[debug]recursive submodules = false
+::add-matcher::/home/runner/work/_actions/actions/checkout/v2/dist/problem-matcher.json
+##[debug]Added matchers: 'checkout-git'. Problem matchers scan action output for known warning or error strings and report these inline.
+Syncing repository: mixplorernano-debug/venv-bin-activate-Patched-v3
+::group::Getting Git version info
+Getting Git version info
+  Working directory is '/home/runner/work/venv-bin-activate-Patched-v3/venv-bin-activate-Patched-v3'
+  ##[debug]Getting git version
+  /usr/bin/git version
+  git version 2.51.0
+  ##[debug]Set git useragent to: git/2.51.0 (github-actions-checkout)
+  ::endgroup::
+::add-mask::***
+Temporarily overriding HOME='/home/runner/work/_temp/536183f0-80c6-459b-80bd-b14957e07c0a' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+/usr/bin/git config --global --add safe.directory /home/runner/work/venv-bin-activate-Patched-v3/venv-bin-activate-Patched-v3
+Deleting the contents of '/home/runner/work/venv-bin-activate-Patched-v3/venv-bin-activate-Patched-v3'
+::group::Initializing the repository
+Initializing the repository
+  /usr/bin/git init /home/runner/work/venv-bin-activate-Patched-v3/venv-bin-activate-Patched-v3
+  hint: Using 'master' as the name for the initial branch. This default branch name
+  hint: is subject to change. To configure the initial branch name to use in all
+  hint: of your new repositories, which will suppress this warning, call:
+  hint:
+  hint: 	git config --global init.defaultBranch <name>
+  hint:
+  hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+  hint: 'development'. The just-created branch can be renamed via this command:
+  hint:
+  hint: 	git branch -m <name>
+  hint:
+  hint: Disable this message with "git config set advice.defaultBranchName false"
+  Initialized empty Git repository in /home/runner/work/venv-bin-activate-Patched-v3/venv-bin-activate-Patched-v3/.git/
+  /usr/bin/git remote add origin https://github.com/mixplorernano-debug/venv-bin-activate-Patched-v3
+  ::endgroup::
+::group::Disabling automatic garbage collection
+Disabling automatic garbage collection
+::group::Set
