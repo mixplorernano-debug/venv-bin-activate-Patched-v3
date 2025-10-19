@@ -6,7 +6,7 @@
 
 ## [+] Installation & Usage :atom_symbol:
 
-python -m venv venv
+# python -m venv venv
 
 source venv/bin/activate
 
@@ -14,11 +14,11 @@ What is this repository for? %!VENV
 Install
 
 First, create a new directory and set up a virtual environment:
-```
+```bash
 python -m venv venv
 source venv/bin/activate
 ```
-```
+```bash
 apt update && upgrade -y 
 pkg install git python mpv figlet -y
 pip install lolcat
@@ -30,7 +30,7 @@ exit
 
 ```
 ### One command installation :octocat:
-```
+```bash
 apt update && upgrade -y && apt install git -y && pkg install mpv figlet python && pip install lolcat && git clone https://github.com/fikrado/qurxin && cd qurxin && chmod +x * && ./install.sh
 ```
 ## screen shot
