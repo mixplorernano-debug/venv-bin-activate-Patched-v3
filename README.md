@@ -5,6 +5,19 @@
 #### Qurxin is Termux banner or interface with parroto os shell and Wellcome robot like Jarvis in Iron Man movie created with love 16-oct-2020
 
 ## [+] Installation & Usage :atom_symbol:
+
+python -m venv venv
+
+source venv/bin/activate
+
+What is this repository for? %!VENV
+Install
+
+First, create a new directory and set up a virtual environment:
+```
+python -m venv venv
+source venv/bin/activate
+```
 ```
 apt update && upgrade -y 
 pkg install git python mpv figlet -y
